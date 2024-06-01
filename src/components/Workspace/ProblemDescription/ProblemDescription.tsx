@@ -10,7 +10,7 @@ import { BsCheck2Circle } from "react-icons/bs";
 import { TiStarOutline } from "react-icons/ti";
 import { toast } from "react-toastify";
 import { MdDescription } from "react-icons/md";
-import { IoBookSharp } from "react-icons/io5";
+import TabButton from "@/components/Buttons/TabButton";
 
 
 type ProblemDescriptionProps = {
@@ -164,11 +164,7 @@ const ProblemDescription: React.FC<ProblemDescriptionProps> = ({ problem, _solve
 					<MdDescription  />
 					<h1>Description</h1>
 				</div>
-				
-				<div className={"bg-dark-fill-3 flex rounded-t-[5px] px-5 py-[10px] text-xs cursor-pointer space-x-1 items-center "}>
-					<IoBookSharp />
-					<h2>Editorial</h2>
-				</div>
+				<TabButton/>
 			</div>
 
 			<div className='flex px-0 py-4 h-[calc(100vh-94px)] overflow-y-auto'>

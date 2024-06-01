@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import PreferenceNav from "./PreferenceNav/PreferenceNav";
 import Split from "react-split";
 import CodeMirror from "@uiw/react-codemirror";
-import { vscodeDark } from "@uiw/codemirror-theme-vscode";
+// import { vscodeDark } from "@uiw/codemirror-theme-vscode";
+import { dracula } from "@uiw/codemirror-theme-dracula";
 import { javascript } from "@codemirror/lang-javascript";
 import EditorFooter from "./EditorFooter";
 import { Problem } from "@/utils/types/problem";
@@ -121,7 +122,8 @@ const Playground: React.FC<PlaygroundProps> = ({ problem, setSuccess, setSolved 
 				<div className='w-full overflow-auto'>
 					<CodeMirror
 						value={userCode}
-						theme={vscodeDark}
+						// theme={vscodeDark}
+						theme={dracula}
 						onChange={onChange}
 						extensions={[javascript()]}
 						style={{ fontSize: settings.fontSize }}
