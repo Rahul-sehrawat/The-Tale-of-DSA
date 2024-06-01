@@ -25,7 +25,8 @@ const AuthPage: React.FC<AuthPageProps> = () => {
 	return (
 		<div >
 			<div >
-				<div className="bg-cover bg-center h-screen w-screen" style={{backgroundImage: "url('/last.webp')"}}>
+				{/* <div className="bg-cover bg-center h-screen w-screen" style={{backgroundImage: "url('/new3.jpg')", }}> */}
+				<div className=" brightness-75 bg-cover bg-center h-screen w-screen" style={{backgroundImage: "url('/bg.png')", }}>
 				 	<Navbar />
     			 </div>
 				{authModal.isOpen && <AuthModal />}

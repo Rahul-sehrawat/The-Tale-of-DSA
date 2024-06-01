@@ -1,6 +1,8 @@
 import ProblemsTable from "@/components/ProblemsTable/ProblemsTable";
 import Topbar from "@/components/Topbar/Topbar";
 import useHasMounted from "@/hooks/useHasMounted";
+import CalenderCard from '../components/CalenderCard/CalenderCard';
+
 
 import { useState } from "react";
 
@@ -11,7 +13,8 @@ export default function Home() {
 	if (!hasMounted) return null;
 
 	return (
-		<>
+		<>	
+			
 			<main className='bg-dark-layer-2 min-h-screen'>
 				<Topbar />
 				<h1
@@ -28,7 +31,9 @@ export default function Home() {
 							))}
 						</div>
 					)}
-					<table className='text-sm text-left text-gray-500 dark:text-gray-400 sm:w-7/12 w-full max-w-[1200px] mx-auto'>
+					<div className=" flex ">
+					<div className=" flex-grow ">
+					<table className=' text-sm text-left text-gray-500 dark:text-gray-400 w-11/12  mx-5 '>
 						{!loadingProblems && (
 							<thead className='text-xs text-gray-700 uppercase dark:text-gray-400 border-b '>
 								<tr>
@@ -54,8 +59,16 @@ export default function Home() {
 						
 						<ProblemsTable setLoadingProblems={setLoadingProblems} />  
 					</table>
+					
+					</div>
+					<CalenderCard/>
+					</div>
 				</div>
+				
 			</main>
+			
+			
+			
 		</>
 	);
 }
