@@ -2,9 +2,11 @@ import ProblemsTable from "@/components/ProblemsTable/ProblemsTable";
 import Topbar from "@/components/Topbar/Topbar";
 import useHasMounted from "@/hooks/useHasMounted";
 import CalenderCard from '../components/CalenderCard/CalenderCard';
+import ChatbotComponent from "@/components/ChatBot/ChatbotComponent";
 
 
 import { useState } from "react";
+import AnimatedText from "@/components/AnimatedText/AnimatedText";
 
 export default function Home() {
 	const [loadingProblems, setLoadingProblems] = useState(true);
@@ -23,6 +25,7 @@ export default function Home() {
 				>
 					&ldquo; TOP D.S.A PROBLEMS &rdquo; 
 				</h1>
+				
 				<div className='relative overflow-x-auto mx-auto px-6 pb-10'>
 					{loadingProblems && (
 						<div className='max-w-[1200px] mx-auto sm:w-7/12 w-full animate-pulse'>
@@ -59,14 +62,14 @@ export default function Home() {
 						
 						<ProblemsTable setLoadingProblems={setLoadingProblems} />  
 					</table>
-					
 					</div>
 					<CalenderCard/>
 					</div>
 				</div>
-				
 			</main>
+			<div>
 			
+			</div>
 			
 			
 		</>

@@ -103,7 +103,10 @@ const Profile = () => {
                   <p className=' text-dark-yellow py-3 text-xl'>Solved Problems :</p>
                 <CircularProgressBar completed={userData.solvedProblems.length} total={problems.length} radius={60} strokeWidth={8} />
                 </div>
-                    <img src="/badge.png" alt="badge  " /> 
+                    <div className= 'bg-dark-fill-2 w-1/2 rounded-2xl py-1 px-20'>
+                    <h1 className=' text-white -mx-16 my-2 text-2xl'>Achievement Unlocked</h1>
+                     <span className='text-white z-10 absolute top-36 right-96'>{userData.solvedProblems.length > 3 ? <img src='/trophy.png'></img>:<img src='/ques.png'></img>}</span>
+                    </div> 
               </div >
               <div className='my-2  '>
                 <img src="/calender.png" alt="calneder"  />

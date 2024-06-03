@@ -5,6 +5,7 @@ import cn from '../../utils/calender/cn'
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import { problems } from "@/mockProblems/problems";
 import { FaAnglesRight } from "react-icons/fa6";
+import Image from 'next/image';
 
 
 export default function CalendarCard() {
@@ -12,9 +13,21 @@ export default function CalendarCard() {
 	const currentDate = dayjs();
 	const [today, setToday] = useState(currentDate);
 	const [selectDate, setSelectDate] = useState(currentDate);
+	const [showCalendarCard, setShowCalendarCard] = useState(false);
+	  
+	const handleToggleChatbot = () => {
+		  setShowCalendarCard(!showCalendarCard);
+		};
+
+
 	return (
+	<div className="fixed bottom-5 right-5 flex flex-col items-center ">
+    <div onClick={handleToggleChatbot} className="cursor-pointer ml-2 mb-2 mt-10 ">
+      <Image className="hover:scale-95" src="/calendericon.png" alt="Chatbot" width={80} height={80} />
+    </div>
+    {showCalendarCard && (
 		<div className=" gap-10 sm:divide-x justify-center mx-auto w-2/2 h-max  p-3 items-baseline sm:flex-row flex-row bg-yellow-100  rounded-3xl  ">
-			<div className="w-96 h-1/2  ">
+			<div className="w-96   ">
 				<div className="flex justify-between items-center ">
 					<h1 className="select-none font-semibold">
 						{months[today.month()]}, {today.year()}
@@ -89,16 +102,42 @@ export default function CalendarCard() {
 					)}
 				</div>
 			</div>
-			<div className=" h-1/2 w-96 p-8 text-center text-xl sm:px-5">
-				<h1 className=" font-semibold">
-					📆 {selectDate.toDate().toDateString()}
-				</h1>
-				<p className="text-red-700 p-2">Your Question for the Day :</p>
+			<div className="  p-2 text-center text-xl sm:px-5">
+				<p className="text-red-600  p-2">Your Question for the Day :</p>
 				<div className="flex justify-center">
 				<FaAnglesRight className="m-1"/>
                 <h2> {problems[Math.ceil(Math.random()*12)].title}</h2>
 				</div>
 			</div>
+			
 		</div>
+    )}
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	);
 }

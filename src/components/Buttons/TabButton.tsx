@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { IoMdCloseCircle } from "react-icons/io";
-// import { Solutions } from '@/mockProblems/solutions';
 import { Solutions } from '@/mockProblems/solutions';
 import { useParams } from 'next/navigation';
 
