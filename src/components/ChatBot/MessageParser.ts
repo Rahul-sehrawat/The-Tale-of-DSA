@@ -10,6 +10,32 @@ class MessageParser {
       if (lowercase.includes('hello') || lowercase.includes('hi') || lowercase.includes('hey')) {
             this.actionProvider.handleHello();
         } 
+      if (lowercase.includes('dsa')) {
+        this.actionProvider.handleDsa();
+        }
+      if (lowercase.includes('two sum')) {
+        this.actionProvider.handleTwoSum();
+        }
+
+      if (lowercase.includes('reverse')) {
+        this.actionProvider.handleReverseLinkedList();
+        }
+
+      if (lowercase.includes('house robber 1')) {
+        this.actionProvider.handleHouseRobber1();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
     }
   }
   
