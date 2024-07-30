@@ -31,7 +31,9 @@ class MessageParser {
       if (lowercase.includes('hash table')) {
         this.actionProvider.handleHashTable();
         }
-
+      if (lowercase.includes('graph')) {
+        this.actionProvider.handleGraph();
+        }
 
         
 

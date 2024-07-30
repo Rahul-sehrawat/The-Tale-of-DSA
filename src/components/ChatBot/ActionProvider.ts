@@ -63,6 +63,14 @@ class ActionProvider {
       }));
     }
 
+    handleGraph() {
+      const message = this.createChatBotMessage("A graph is a collection of nodes (vertices) and edges that connect pairs of nodes. It can be directed or undirected, and may contain cycles.");
+      this.setState((prev: any) => ({
+        ...prev,
+        messages: [...prev.messages, message],
+      }));
+    }
+
 
 
 
