@@ -18,25 +18,29 @@ interface NoteType {
 const NotesApp: React.FC = () => {
     const initialNotes: NoteType[] = [];
     const [currentPage, setCurrentPage] = useState<number>(1);
-    const [notes, setNotes] = useState<NoteType[]>(() => {
-        const savedNotes = JSON.parse(localStorage.getItem('react-notes-app-data') || '[]');
-        return savedNotes || initialNotes;
-    });
+    const [notes, setNotes] = useState<NoteType[]>(initialNotes);
+
     const [searchText, setSearchText] = useState<string>('');
     const [darkMode, setDarkMode] = useState<boolean>(false);
+    const [isClient, setIsClient] = useState<boolean>(false);
+
 
     useEffect(() => {
-        if (typeof window !== 'undefined') {
-            const savedNotes = JSON.parse(localStorage.getItem('react-notes-app-data') || '[]');
-            setNotes(savedNotes || initialNotes);
-        }
+        setIsClient(true)
     }, []);
 
     useEffect(() => {
-        if (typeof window !== 'undefined') {
+        if (isClient) {
+            const savedNotes = JSON.parse(localStorage.getItem('react-notes-app-data') || '[]');
+            setNotes(savedNotes || initialNotes);
+        }
+    }, [isClient]);
+
+    useEffect(() => {
+        if (isClient) {
             localStorage.setItem('react-notes-app-data', JSON.stringify(notes));
         }
-    }, [notes]);
+    }, [notes, isClient]);
 
 
     const addNote = (title: string, text: string) => {
