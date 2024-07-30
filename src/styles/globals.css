@@ -193,3 +193,183 @@ code {
 	height: 750px;
   }
 
+/* notes css */
+
+
+.note.new {
+	background-color: #FFBF78;
+	height: 225px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+.dark-mode {
+	background-color: black;
+	height: 100%
+}
+
+.dark-mode h1 {
+	color: white;
+}
+
+
+.NotesContainer {
+	max-width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	min-height: 100vh;
+}
+
+.notes-list {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(
+		auto-fill,
+		minmax(250px, 1fr)
+	);
+}
+
+.single-note:hover{
+	scale: 1.05;
+}
+
+
+textarea, input {
+	border: none;
+	resize: none;
+	background-color: #FFBF78;
+}
+
+
+textarea:focus, input:focus {
+	outline: none;
+}
+
+.save ,.cancel {
+	padding: 5px 10px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	background-color: #4caf50;
+	color: white;
+	cursor: pointer;
+}
+
+.save:hover, .cancel:hover {
+	background-color: #45a049;
+	cursor: pointer;
+}
+
+.note {
+	background-color: #B4E380;
+	border-radius: 10px;
+	padding: 1rem;
+	min-height: 225px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	white-space: pre-wrap;
+	word-wrap:break-word;
+	overflow-wrap: break-word;
+}
+
+.note-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.delete-icon, .edit-icon {
+	cursor: pointer;
+}
+
+.search {
+	display: flex;
+	align-items: center;
+	background-color: rgb(233, 233, 233);
+	border-radius: 10px;
+	padding: 5px;
+	margin-bottom: 1.5em;
+}
+
+.search input {
+	border: none;
+	background-color: rgb(233, 233, 233);
+	width: 100%;
+}
+
+.search input:focus {
+	outline: none;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .pagination button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #c1bdad;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .pagination button:hover {
+    background-color: #d1b763;
+    border: 2px solid rgb(17, 16, 16);
+  }
+  
+  .pagination button.active {
+    background-color: #e5b30d;
+  }
+
+  .name-form {
+	display: flex;
+	align-items: center;
+}
+
+  .name-input {
+	padding: 5px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+.save-name-button {
+	padding: 5px 10px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	background-color: #4caf50;
+	color: white;
+	cursor: pointer;
+}
+
+.save-name-button:hover {
+	background-color: #45a049;
+}
+
+.toggle-icon {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+
+
+
+
+

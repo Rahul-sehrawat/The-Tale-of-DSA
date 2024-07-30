@@ -89,6 +89,15 @@ const Topbar: React.FC<TopbarProps> = ({ problemPage }) => {
 					</div>
 					<div>
 						<Link
+							href='/NotesApp'
+							rel='noreferrer'
+							className='bg-dark-fill-3 py-1.5 px-3 cursor-pointer rounded text-brand-orange hover:bg-dark-fill-2'
+						>
+							Notes
+						</Link>
+					</div>
+					<div>
+						<Link
 							href='/discuss'
 							rel='noreferrer'
 							className='bg-dark-fill-3 py-1.5 px-3 cursor-pointer rounded text-brand-orange hover:bg-dark-fill-2'
