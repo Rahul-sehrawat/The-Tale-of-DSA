@@ -26,8 +26,18 @@ const NotesApp: React.FC = () => {
     const [darkMode, setDarkMode] = useState<boolean>(false);
 
     useEffect(() => {
-        localStorage.setItem('react-notes-app-data', JSON.stringify(notes));
+        if (typeof window !== 'undefined') {
+            const savedNotes = JSON.parse(localStorage.getItem('react-notes-app-data') || '[]');
+            setNotes(savedNotes || initialNotes);
+        }
+    }, []);
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            localStorage.setItem('react-notes-app-data', JSON.stringify(notes));
+        }
     }, [notes]);
+
 
     const addNote = (title: string, text: string) => {
         const date = new Date();
