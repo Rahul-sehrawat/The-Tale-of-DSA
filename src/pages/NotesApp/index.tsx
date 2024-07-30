@@ -4,6 +4,7 @@ import NotesList from '../../components/Notes/NodeList';
 import Search from '../../components/Notes/Search';
 import Pagination from '../../components/Notes/Pagination';
 import Header from '../../components/Notes/Header'; 
+import Topbar from '@/components/Topbar/Topbar';
 
 
 interface NoteType {
@@ -65,6 +66,7 @@ const NotesApp: React.FC = () => {
 
     return (
         <div className={`${darkMode ? 'dark-mode' : ''}`}>
+            <Topbar/>
             <div className='NotesContainer'>
                 <Header handleToggleDarkMode={setDarkMode} />
                 <Search handleSearchNote={setSearchText} />
