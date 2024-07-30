@@ -24,7 +24,16 @@ class MessageParser {
       if (lowercase.includes('house robber 1')) {
         this.actionProvider.handleHouseRobber1();
         }
+      
+      if (lowercase.includes('linked list')) {
+        this.actionProvider.handleLinkedList();
+        }
+      if (lowercase.includes('hash table')) {
+        this.actionProvider.handleHashTable();
+        }
 
+
+        
 
 
 

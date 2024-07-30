@@ -47,6 +47,22 @@ class ActionProvider {
       }));
     }
 
+    handleLinkedList() {
+      const message = this.createChatBotMessage("A linked list is a linear data structure where each element is a separate object called a node. Each node contains data and a reference (or link) to the next node in the sequence.");
+      this.setState((prev: any) => ({
+        ...prev,
+        messages: [...prev.messages, message],
+      }));
+    }
+
+    handleHashTable() {
+      const message = this.createChatBotMessage("A hash table is a data structure that maps keys to values using a hash function. It allows for fast insertion, deletion, and lookup of elements.");
+      this.setState((prev: any) => ({
+        ...prev,
+        messages: [...prev.messages, message],
+      }));
+    }
+
 
 
 
