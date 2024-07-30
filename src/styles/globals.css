@@ -120,12 +120,13 @@ code {
   
   .react-chatbot-kit-chat-header {
 	width: 371x;
-	border-bottom: 3px solid rgb(126, 5, 255) !important;
+	border-bottom: 3px solid black !important;
 	font-size: 1.2rem !important;
   }
   
   .react-chatbot-kit-chat-message-container {
-	background-image: url('/chatbotbg.webp');
+	/* background-image: url('/chatbotbg.webp'); */
+	background: #0F0F0F;
 	background-size: contain;
 	opacity: 0.9;
 
@@ -139,22 +140,24 @@ code {
   .react-chatbot-kit-chat-bot-message {
 	width: 200px;
 	box-shadow: 2px 2px 2px rgb(245, 239, 239);
-	background-color: rgb(100, 6, 231) !important;
+	/* background-color: rgb(100, 6, 231) !important; */
+	background-color: #B5C18E !important;
+
   }
 
   .react-chatbot-kit-chat-bot-message-arrow{
-	border-right: 8px solid rgb(100, 6, 231) !important;
+	border-right: 8px solid #B5C18E !important;
   }
   
   .react-chatbot-kit-user-chat-message{
-	box-shadow: -3px 3px 2px rgb(238, 6, 6);
+	box-shadow: -3px 3px 2px rgb(166, 132, 132);
 	background: white !important;
 	
 
   }
 
   .react-chatbot-kit-chat-btn-send {
-	background-color: rgb(244, 244, 28) !important;
+	background-color: #95eb14 !important;
 	background-image: url(/send.png) !important;
 	background-size: contain;
 	width: 55px !important;
