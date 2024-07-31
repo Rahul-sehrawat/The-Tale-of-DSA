@@ -34,6 +34,12 @@ class MessageParser {
       if (lowercase.includes('graph')) {
         this.actionProvider.handleGraph();
         }
+      if (lowercase.includes('greedy')) {
+        this.actionProvider.handleGreedy();
+        }
+      if (lowercase.includes('dp')) {
+        this.actionProvider.handleDP();
+        }
 
         
 

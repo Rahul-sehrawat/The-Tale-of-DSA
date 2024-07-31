@@ -71,6 +71,21 @@ class ActionProvider {
       }));
     }
 
+    handleGreedy() {
+      const message = this.createChatBotMessage("A greedy algorithm builds up a solution piece by piece, always choosing the next piece that offers the most immediate benefit. It is often used for optimization problems.");
+      this.setState((prev: any) => ({
+        ...prev,
+        messages: [...prev.messages, message],
+      }));
+    }
+    handleDP() {
+      const message = this.createChatBotMessage("Dynamic programming is an optimization technique that solves problems by breaking them down into simpler subproblems and storing the results of these subproblems to avoid redundant calculations.");
+      this.setState((prev: any) => ({
+        ...prev,
+        messages: [...prev.messages, message],
+      }));
+    }
+
 
 
 
