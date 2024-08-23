@@ -369,7 +369,121 @@ textarea:focus, input:focus {
 }
 
 
+.new-header{
+	background: #5b5756;
+	height: 200px;
+	display: flex;
+	padding-left: 20px;
+	align-items: center;
+}
+
+
+.logo-holder {
+    width: 180px;
+    height: 200px;
+    -webkit-transform: translateZ(0);
+ }
+
+.bar {  
+    height: 12px;
+    left: 18px;
+    margin-top: 8px;
+    animation: fill 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill1 { animation: fill-1 3s infinite alternate, colors 5s infinite alternate;}
+.bar.fill2 { animation:  fill-2 3s infinite alternate, colors 5s infinite alternate;}
+.bar.fill3 { animation:  fill-3 3s infinite alternate, colors 5s infinite alternate;}
+.bar.fill4 { animation:  fill-4 3s infinite alternate, colors 5s infinite alternate;}
+.bar.fill5 { animation:  fill-5 3s infinite alternate, colors 5s infinite alternate;}
+.bar.fill6 { animation:  fill-6 3s infinite alternate, colors 5s infinite alternate;}
+
+
+@keyframes fill {
+  0%   { width: 0; }
+  33%  { width: 50px;}
+  66%  { width: 10px;}
+  100% { width: 150px; }
+}
+
+@keyframes fill-1 {
+  0%   { width: 0; }
+  33%  { width: 70px;}
+  66%  { width: 30px;}
+  100% { width: 170px; }
+}
+
+@keyframes fill-2 {
+  0%   { width: 0; }
+  33%  { width: 120px;}
+  66%  { width: 80px;}
+  100% { width: 196px; }
+}
+
+@keyframes fill-3 {
+  0%   { width: 0; }
+  33%  { width: 70px;}
+  66%  { width: 34px;}
+  100% { width: 149px; }
+}
+
+@keyframes fill-4 {
+  0%   { width: 0; }
+  33%  { width: 98px;}
+  66%  { width: 34px;}
+  100% { width: 99px; }
+}
+
+@keyframes fill-5 {
+  0%   { width: 0; }
+  33%  { width: 30px;}
+  66%  { width: 10px;}
+  100% { width: 148px; }
+}
+
+
+@keyframes fill-6 {
+  0%   { width: 0; }
+  33%  { width: 48px;}
+  66%  { width: 22px;}
+  100% { width: 140px; }
+}
+
+@keyframes colors {
+  0% { background-color: #dc1111;}
+  50% { background-color: #3a3;}
+  100% { background-color: #ebb206;}
+}
 
 
 
+.firstchild{
+	background-color: rgb(22, 22, 22);
+	color: white;
+	width: 300px;
+	height: 180px;
+	margin-bottom: 6px;
+	padding: 6px;
+	position: relative;
+	left: 200px;
+	border-radius: 15px;
+	animation: firstchild-animation 3.5s infinite;
+}
 
+@keyframes firstchild-animation {
+	0%, 100% { transform: translateY(0);}
+	50% { transform: translateY(10px);}
+  }
+
+  .project-heading{
+	background-color: rgb(22, 22, 22);
+	color:white;
+	padding-left: 10px;
+	width: 400px;
+	height: 100px;
+	position: relative;
+	top: 11px;
+	left: 20px;
+	border-radius: 15px;
+	animation: firstchild-animation 2s infinite;
+  }
