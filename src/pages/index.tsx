@@ -4,6 +4,9 @@ import useHasMounted from "@/hooks/useHasMounted";
 import CalenderCard from '../components/CalenderCard/CalenderCard';
 import { useState } from "react";
 
+import MainHeader from "@/components/MainHeader/MainHeader";
+
+
 export default function Home() {
 	const [loadingProblems, setLoadingProblems] = useState(true);
 	const hasMounted = useHasMounted();
@@ -12,15 +15,9 @@ export default function Home() {
 
 	return (
 		<>	
-			<main className='bg-dark-layer-2 min-h-screen'>
+			<main className='bg-dark-layer-2 min-h-screen  '>
 				<Topbar />
-				<h1
-					className='text-2xl text-center text-gray-700 dark:text-gray-400 font-medium
-					uppercase mt-10 mb-5'
-				>
-					&ldquo; TOP D.S.A PROBLEMS &rdquo; 
-				</h1>
-				
+				<MainHeader/>
 				<div className='relative overflow-x-auto mx-auto px-6 pb-10'>
 					{loadingProblems && (
 						<div className='max-w-[1200px] mx-auto sm:w-7/12 w-full animate-pulse'>
@@ -31,7 +28,7 @@ export default function Home() {
 					)}
 					<div className=" flex ">
 					<div className=" flex-grow ">
-					<table className=' text-sm text-left text-gray-500 dark:text-gray-400 w-11/12  mx-5 '>
+					<table className=' text-sm text-left text-gray-500 dark:text-gray-400 w-11/12  mx-5  '>
 						{!loadingProblems && (
 							<thead className='text-xs text-gray-700 uppercase dark:text-gray-400 border-b '>
 								<tr>
