@@ -13,7 +13,7 @@ export default function CalendarCard() {
 	const currentDate = dayjs();
 	const [today, setToday] = useState(currentDate);
 	const [selectDate, setSelectDate] = useState(currentDate);
-	const [showCalendarCard, setShowCalendarCard] = useState(false);
+	const [showCalendarCard, setShowCalendarCard] = useState(true);
 	  
 	const handleToggleChatbot = () => {
 		  setShowCalendarCard(!showCalendarCard);

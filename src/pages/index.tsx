@@ -2,11 +2,7 @@ import ProblemsTable from "@/components/ProblemsTable/ProblemsTable";
 import Topbar from "@/components/Topbar/Topbar";
 import useHasMounted from "@/hooks/useHasMounted";
 import CalenderCard from '../components/CalenderCard/CalenderCard';
-import ChatbotComponent from "@/components/ChatBot/ChatbotComponent";
-
-
 import { useState } from "react";
-import AnimatedText from "@/components/AnimatedText/AnimatedText";
 
 export default function Home() {
 	const [loadingProblems, setLoadingProblems] = useState(true);
@@ -16,7 +12,6 @@ export default function Home() {
 
 	return (
 		<>	
-			
 			<main className='bg-dark-layer-2 min-h-screen'>
 				<Topbar />
 				<h1
@@ -52,9 +47,6 @@ export default function Home() {
 
 									<th scope='col' className='px-6 py-3 w-0 font-medium'>
 										Category
-									</th>
-									<th scope='col' className='px-6 py-3 w-0 font-medium'>
-										Solution
 									</th>
 								</tr>
 							</thead>

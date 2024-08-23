@@ -54,7 +54,7 @@ type ProblemsTableProps = {
 							</td>
 							<td className={`px-6 py-4 ${difficulyColor}`}>{problem.difficulty}</td>
 							<td className={"px-6 py-4"}>{problem.category}</td>
-							<td className={"px-6 py-4"}>
+							{/* <td className={"px-6 py-4"}>
 								{problem.videoId ? (
 									<AiFillYoutube
 										fontSize={"28"}
@@ -64,7 +64,7 @@ type ProblemsTableProps = {
 								) : (
 									<p className='text-gray-400'>Coming soon</p>
 								)}
-							</td>
+							</td> */}
 						</tr>
 					);
 				})}
