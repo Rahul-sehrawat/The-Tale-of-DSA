@@ -14,7 +14,6 @@ export const problems: Problem[] = [
 		difficulty: "Easy",
 		category: "Array",
 		order: 1,
-		videoId: "8-k1C6ehKuw",
 	},
 	{
 		id: "reverse-linked-list",
@@ -22,7 +21,6 @@ export const problems: Problem[] = [
 		difficulty: "Hard",
 		category: "Linked List",
 		order: 2,
-		videoId: "",
 	},
 	{
 		id: "jump-game",
@@ -30,7 +28,6 @@ export const problems: Problem[] = [
 		difficulty: "Medium",
 		category: "Dynamic Programming",
 		order: 3,
-		videoId: "",
 	},
 	{
 		id: "valid-parentheses",
@@ -38,7 +35,6 @@ export const problems: Problem[] = [
 		difficulty: "Easy",
 		category: "Stack",
 		order: 4,
-		videoId: "xty7fr-k0TU",
 	},
 	{
 		id: "search-a-2d-matrix",
@@ -46,7 +42,6 @@ export const problems: Problem[] = [
 		difficulty: "Medium",
 		category: "Binary Search",
 		order: 5,
-		videoId: "ZfFl4torNg4",
 	},
 	{
 		id: "container-with-most-water",
@@ -54,7 +49,6 @@ export const problems: Problem[] = [
 		difficulty: "Medium",
 		category: "Two Pointers",
 		order: 6,
-		videoId: "",
 	},
 	{
 		id: "best-time-to-buy-and-sell-stock",
@@ -62,7 +56,6 @@ export const problems: Problem[] = [
 		difficulty: "Easy",
 		category: "Array",
 		order: 7,
-		videoId: "",
 	},
 	{
 		id: "house-robber",
@@ -70,7 +63,6 @@ export const problems: Problem[] = [
 		difficulty: "Medium",
 		category: "Dynamic Programming",
 		order: 8,
-		videoId: "",
 	},
 	{
 		id: "house-robber-II",
@@ -78,7 +70,6 @@ export const problems: Problem[] = [
 		difficulty: "Medium",
 		category: "Dynamic Programming",
 		order: 9,
-		videoId: "",
 	},
 	{
 		id: "koko-eating-bananas",
@@ -86,7 +77,6 @@ export const problems: Problem[] = [
 		difficulty: "Medium",
 		category: "Binary Search",
 		order: 10,
-		videoId: "",
 	},
 	{
 		id: "n-queens",
@@ -94,7 +84,6 @@ export const problems: Problem[] = [
 		difficulty: "Hard",
 		category: "Backtracking",
 		order: 11,
-		videoId: "",
 	},
 	{
 		id: "daily-temperatures",
@@ -102,7 +91,6 @@ export const problems: Problem[] = [
 		difficulty: "Medium",
 		category: "Stack",
 		order: 12,
-		videoId: "",
 	},
 	{
 		id: "number-of-islands",
@@ -110,7 +98,49 @@ export const problems: Problem[] = [
 		difficulty: "Medium",
 		category: "Graph",
 		order: 13,
-		videoId: "",
 	},
+	{
+		id: "climbing-stairs",
+		title: "Climbing Stairs",
+		difficulty: "Easy",
+		category: "Dynamic Programming",
+		order: 14,
+	},
+	{
+		id: "contains-duplicate",
+		title: "Contains Duplicate",
+		difficulty: "Easy",
+		category: "Array",
+		order: 15,
+	},
+	{
+		id: "missing-number",
+		title: "Missing Number",
+		difficulty: "Easy",
+		category: "Bit Manipulation",
+		order: 16,
+	},
+	{
+		id: "asteroid-collision",
+		title: "Asteroid Collision",
+		difficulty: "Medium",
+		category: "Stack",
+		order: 17,
+	},
+	{
+		id: "is-subsequence",
+		title: "Is Subsequence",
+		difficulty: "Easy",
+		category: "Two Pointers",
+		order: 18,
+	},
+	{
+		id: "search-insert-position",
+		title: "Search Insert Position",
+		difficulty: "Easy",
+		category: "Binary Search",
+		order: 19,
+	},
+
 	
 ];

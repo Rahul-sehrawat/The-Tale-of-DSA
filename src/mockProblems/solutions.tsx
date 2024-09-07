@@ -85,5 +85,37 @@ export const Solutions: Solution[] = [
 		
 	
 	},
+	{
+		id: "climbing-stairs",
+		title: "Climbing Stairs",
+        code: '"var climbStairs = function(n) {\n        const dp = new Array(n + 1).fill(0);\n    dp[0] = 1;\n    dp[1] = 1;\n\n    for (let i = 2; i <= n; i++) {\n        dp[i] = dp[i - 1] + dp[i - 2];\n    }\n\n    return dp[n];  \n};"',
+	},
+	{
+		id: "contains-duplicate",
+		title: "Contains Duplicate",
+        code: '"var containsDuplicate = function(nums) {\n        const numSet = new Set();\n\n    for (const n of nums) {\n        if (numSet.has(n)) {\n            return true;\n        }\n        numSet.add(n);\n    }\n    \n    return false;\n};"',
+	},
+	{
+		id: "missing-number",
+		title: "missing Number",
+        code: '"var missingNumber  = function(nums) {\n            let res = nums.length;\n        \n        for (let i = 0; i < nums.length; i++) {\n            res += i - nums[i];\n        }\n        \n        return res;\n};"',
+	},
+	{
+		id: "asteroid-collision",
+		title: "Asteroid Collision",
+        code: '"var asteroidCollision = function(asteroids) {\n        const res = []\n    \n    for (let i = 0; i < asteroids.length; i++) {\n        const last = res[res.length - 1]\n        const cur = asteroids[i]\n        \n        if (!res.length || last < 0 || cur > 0) {\n            res.push(cur)\n        } else if (-cur == last) {\n            res.pop()\n        } else if (-cur > last) {\n            res.pop()\n            i--\n        }\n    }\n    \n    return res \n};"',
+	},
+	{
+		id: "is-subsequence",
+		title: "Is Subsequence",
+        code: '"var isSubsequence = function(s, t) {\n        let sp = 0;\n    let tp = 0;\n\n    while (sp < s.length && tp < t.length) {\n        if (s[sp] === t[tp]) {\n            sp++;\n        }\n        tp++;\n    }\n\n    return sp === s.length;  \n};"',
+	},
+	{
+		id: "search-insert-position",
+		title: "Search Insert Position",
+        code: '"var searchInsert = function(nums, target) {\n        let left = 0;\n    let right = nums.length - 1;\n\n    while (left <= right) {\n        let mid = Math.floor((left + right) / 2);\n\n        if (nums[mid] === target) {\n            return mid;\n        } else if (nums[mid] > target) {\n            right = mid - 1;\n        } else {\n            left = mid + 1;\n        }\n    }\n\n    return left;    \n};;"',
+	},
 	
 ];
+
+
